@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body, #root { height: 100%; margin: 0; background: #07070f; color: #ecebff; font-family: 'Space Grotesk', sans-serif; overflow: hidden; }
+.glass { background: rgba(18, 16, 40, 0.55); backdrop-filter: blur(22px) saturate(140%); -webkit-backdrop-filter: blur(22px) saturate(140%); border: 1px solid rgba(255,255,255,0.09); box-shadow: 0 20px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06); }
+.glow:hover { box-shadow: 0 0 0 1px rgba(56,232,255,.5), 0 0 28px rgba(56,232,255,.25); }
+.md h1,.md h2,.md h3 { font-weight: 700; margin: 1em 0 .4em; }
+.md h1 { font-size: 1.6rem } .md h2 { font-size: 1.3rem }
+.md p, .md li { line-height: 1.7; } .md ul { list-style: disc; padding-left: 1.4rem; } .md ol { list-style: decimal; padding-left: 1.4rem; }
+.md code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; font-size: .9em; }
+.md blockquote { border-left: 3px solid #ff5ca8; padding-left: 1rem; opacity: .85; }
+::selection { background: rgba(255,92,168,.4); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
